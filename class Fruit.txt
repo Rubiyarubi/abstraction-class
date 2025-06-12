@@ -1,0 +1,32 @@
+class Fruit {
+    void taste() {
+        System.out.println("tasting...");
+    }
+}
+
+class Citrus extends Fruit
+ {
+    void sour() 
+{
+        System.out.println("sour flavor...");
+    }
+}
+
+class Orange extends Citrus 
+{
+    void peel()
+ {
+        System.out.println("peeling...");
+    }
+}
+
+public class Main
+ {
+    public static void main(String[] args)
+ {
+        Orange o = new Orange();
+        o.peel();
+        o.sour();
+        o.taste();
+    }
+}
